@@ -1,0 +1,21 @@
+p.title{
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'Muli', sans-serif;
+	font-size: 50px;
+	padding-top: 250px;
+}
+.parallax {
+ 
+  background-image: url("lol.jpg");
+  min-height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro{
+	text-align: center;
+	font-family: 'Muli',sans-serif;
+	background: #00e5ff;
+}
