@@ -2,7 +2,7 @@ p.title{
 	text-align: center;
 	color: #FFFFFF;
 	font-family: 'Muli', sans-serif;
-	font-size: 50px;
+	font-size: 70px;
 	padding-top: 250px;
 }
 .parallax {
@@ -17,5 +17,53 @@ p.title{
 .intro{
 	text-align: center;
 	font-family: 'Muli',sans-serif;
-	background: #00e5ff;
+	background: #00b8d4;
+	color: white;
+}
+#quirk{
+font-style: italic;
+}
+
+.fa {
+  padding:20px;
+  display: inline;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.Contact{
+	background: #dd2c00;
+}
+#contact{
+	text-align: center;
+	font-family: 'Muli',sans-serif;
+	font-style: bold;
+	font-size: 45px;
+	color: white;
 }
