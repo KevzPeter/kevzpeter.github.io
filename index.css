@@ -17,26 +17,40 @@ p.title{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.intro{
-	text-align: center;
-	font-family: 'Muli',sans-serif;
+.About{
+	min-height: 200px;
 	background: #00b8d4;
-	color: white;
-	min-height: 150px;
-	margin-top: -50px;
+	width: 100%;
+	overflow: auto;
 }
-mark.college{
-	background: none;
+.intro{
+	text-align: left;
+	font-family: 'Muli',sans-serif;
+	font-size: 25px;
 	color: white;
-	text-decoration: none;
-}
+	padding: 20px;
+	margin-left: 100px;
+	width: 50%;
+	float: left;
+	}
+
 .college:hover{
 	opacity: 0.6;
 }
 #quirk{
 font-style: italic;
 }
+.selfie{
+	margin-right: 100px;
+	padding: 20px;
+	float: right;
 
+}
+#pic{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
 .fa {
   padding:20px;
   display: inline;
@@ -73,17 +87,16 @@ font-style: italic;
 }
 .Contact{
 	background: #dd2c00;
-	min-height: 100px;
+	min-height: 200px;
 	margin-top: -10px;
 }
 #ctitle{
 	text-align: center;
 	font-family: 'Muli',sans-serif;
 	font-style: bold;
-	font-size: 45px;
+	font-size: 25px;
+	padding: 20px;
 	color: white;
-	
-	
 }
 .socialmedia{
 	text-align: center;
