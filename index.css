@@ -43,14 +43,39 @@ font-style: italic;
 .selfie{
 	margin-right: 100px;
 	padding: 20px;
+	perspective: 1000px;
 	float: right;
-
 }
-#pic{
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-}
+.selfie:hover .card {
+        transform: rotateY(180deg);
+    }
+    .card, .front, .back {
+        width: 200px;
+        height: 200px;
+    }
+    .card {
+        transition: 0.5s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+    .front, .back {
+        backface-visibility: hidden;
+        position: absolute;
+    }
+    .front {
+        z-index: 1;
+        transform: rotateY(180deg);
+    }
+    .back {
+        z-index: 2; /* back side, placed above front */
+        transform: rotateY(0deg);
+    }
+    #pic1, #pic2{
+    	background-repeat: no-repeat;
+    	width: 200px;
+    	height: 200px;
+    	border-radius: 50%;
+    }
 .fa {
   padding:20px;
   display: inline;
