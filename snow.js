@@ -1,6 +1,6 @@
  var Snowflake = (function() {
 				var flakes;
-				var flakesTotal = 250;
+				var flakesTotal = 50;
 				var wind = 0;
 				var mouseX;
 				var mouseY;
