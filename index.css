@@ -1,11 +1,12 @@
 html {
   scroll-behavior: smooth;
 }
+html, body {width: auto!important; overflow-x: hidden!important} 
 p.title{
 	text-align: center;
 	color: #FFFFFF;
 	font-family: 'Muli', sans-serif;
-	font-size: 50px;
+	font-size: 60px;
 	padding-top: 250px;
 }
 .parallax {
