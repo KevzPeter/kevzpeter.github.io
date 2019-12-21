@@ -1,7 +1,7 @@
-html {
-  scroll-behavior: smooth;
-}
-html, body {width: auto!important; overflow-x: hidden!important} 
+html, body {
+  width: auto!important; 
+  overflow-x: hidden!important
+} 
 p.title{
 	text-align: center;
 	color: #FFFFFF;
@@ -14,10 +14,11 @@ p.title{
   min-height: 710px; 
   background-attachment: fixed;
   background-position: center;
-  width: 100%;
   background-repeat: no-repeat;
+  overflow: hidden;
   background-size: cover;
 }
+
 .About{
 	min-height: 200px;
 	background: #00b8d4;
@@ -83,12 +84,11 @@ font-style: italic;
       font-style: bold;
       font-size: 50px;
       width: 100%;
-      overflow: auto;
       min-height: 200px;
       background: #c6ff00;
     }
 
-.fa,.skills_ic {
+.fa {
   padding:20px;
   display: inline;
   border-radius: 60px;
@@ -124,14 +124,13 @@ font-style: italic;
 }
 .Contact{
 	background: #dd2c00;
-	min-height: 200px;
-	margin-top: -10px;
+	min-height: 220px;
 }
 #ctitle{
 	text-align: center;
 	font-family: 'Muli',sans-serif;
 	font-style: bold;
-	font-size: 25px;
+	font-size: 35px;
 	padding: 20px;
 	color: white;
 }
