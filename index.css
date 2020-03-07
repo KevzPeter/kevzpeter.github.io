@@ -1,12 +1,64 @@
+html *{
+   font-family: 'Muli', sans-serif;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+@media screen and (min-width: 320px) {
+  p.title{
+    font-size: 30px;
+  }
+  .About{
+    text-align: center;
+  }
+  .intro {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    text-align: center;
+    padding-top: 20px;
+    
+  }
+  .selfie{
+    perspective: 1000px;
+    display: inline-block;
+  }
+  .card, .front, .back {
+    width: 120px;
+    height: 120px;
+}
+}
+@media screen and (min-width: 750px) {
+  p.title{
+    font-size: 4vw;
+  }
+  .intro {
+    font-size: 20px;
+    text-align: left;
+    width: 50%;
+    float: left;
+    margin-left: 100px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .selfie{
+    perspective: 1000px;
+    margin-right: 10vw;
+    float: right;
+  }
+  .card, .front, .back {
+    width: 200px;
+    height: 200px;
+}
+}
 html, body {
   width: auto!important; 
-  overflow-x: hidden!important
-} 
+  overflow-x: hidden!important;
+  scroll-behavior: smooth;
+}
 p.title{
 	text-align: center;
 	color: #FFFFFF;
-	font-family: 'Muli', sans-serif;
-	font-size: 60px;
 	padding-top: 250px;
 }
 .parallax {
@@ -18,22 +70,14 @@ p.title{
   overflow: hidden;
   background-size: cover;
 }
-
 .About{
 	min-height: 200px;
-	background: #00b8d4;
+  background: #03dac5;
 	width: 100%;
 	overflow: auto;
 }
 .intro{
-	text-align: left;
-	font-family: 'Muli',sans-serif;
-	font-size: 1.6em;
 	color: white;
-	padding: 20px;
-	margin-left: 100px;
-	width: 50%;
-	float: left;
 	}
 
 .college:hover{
@@ -42,19 +86,10 @@ p.title{
 #quirk{
 font-style: italic;
 }
-.selfie{
-	margin-right: 100px;
-	padding: 20px;
-	perspective: 1000px;
-	float: right;
-}
 .selfie:hover .card {
         transform: rotateY(180deg);
     }
-    .card, .front, .back {
-        width: 200px;
-        height: 200px;
-    }
+    
     .card {
         transition: 0.5s;
         transform-style: preserve-3d;
@@ -74,26 +109,22 @@ font-style: italic;
     }
     #pic1, #pic2{
     	background-repeat: no-repeat;
-    	width: 200px;
-    	height: 200px;
+    	width: 100%;
+    	height: 100%;
     	border-radius: 50%;
     }
     .Skills{
       text-align: center;
-      font-family: 'Muli',sans-serif;
-      font-style: bold;
       font-size: 50px;
-      width: 100%;
       min-height: 200px;
-      background: #c6ff00;
+      background: #00b8d4;
     }
 
 .fa {
   padding:20px;
   display: inline;
-  border-radius: 60px;
-  width: 60px;
-  height: 60px;
+  border-radius: 30px;
+  color: white;
   text-align: center;
   text-decoration: none;
   margin: 10px 5px;
@@ -105,37 +136,28 @@ font-style: italic;
 
 .fa-facebook {
   background: #3B5998;
-  color: white;
 }
 
 .fa-twitter {
   background: #55ACEE;
-  color: white;
 }
 
 .fa-youtube {
   background: #bb0000;
-  color: white;
 }
 
 .fa-instagram {
   background: #125688;
-  color: white;
 }
 .Contact{
-	background: #dd2c00;
+	background: #3700b3;
+  text-align: center;
 	min-height: 220px;
 }
 #ctitle{
-	text-align: center;
-	font-family: 'Muli',sans-serif;
-	font-style: bold;
-	font-size: 35px;
+	font-size: 25px;
 	padding: 20px;
 	color: white;
-}
-.socialmedia{
-	text-align: center;
 }
 .scroll_down{
 	text-align: center;
@@ -156,6 +178,11 @@ font-style: italic;
   50%  {top: 10px;}
   75%  {top: 5px}
   100% {top: 0px;}
+}
+#footer{
+color:white;
+font-size: 10px;
+margin-top: 30px;
 }
 .snowflake {
   position: absolute;
@@ -197,7 +224,6 @@ font-style: italic;
     rgba(255, 255, 255, 0) 100%
   );
 }
-
 #snow {
   position: absolute;
   width: 100%;
