@@ -62,7 +62,7 @@ p.title{
 	padding-top: 250px;
 }
 .parallax {
-  background-image: url("lol.jpg");
+  background-image: url("src/lol.jpg");
   min-height: 710px; 
   background-attachment: fixed;
   background-position: center;
@@ -231,4 +231,15 @@ margin-top: 30px;
 }
 ::-webkit-scrollbar { 
     display: none; 
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 7vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
